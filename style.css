@@ -69,11 +69,11 @@ input[type="search"]{
     border-radius: 1rem;
 }
 
-.bell{
-    width: 1.5rem;
+.perprof > button{
+    width: 2rem;
     border-style: none;
     background: none;
-    background-color: transparent;
+    background-color: white;
 }
 
 .perprof{
