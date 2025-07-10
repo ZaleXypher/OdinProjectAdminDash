@@ -9,32 +9,34 @@
 <body>
     <div class="container">
         <nav class="sidebar">
-            <div class="title">Dashboard</div>
+            <div class="pagetitle"><img src="images/view-dashboard.svg">Dashboard</div>
             <div class="nav">
-                <div class="home">Home</div>
-                <div class="profile">Profile</div>
-                <div class="messages">Messages</div>
-                <div class="history">History</div>
-                <div class="tasks">Tasks</div>
-                <div class="communities">Communities</div>
+                <a class="home"><img src="images/home.svg">Home</a>
+                <a class="profile"><img src="images/card-account-details.svg">Profile</a>
+                <a class="messages"><img src="images/message.svg">Messages</a>
+                <a class="history"><img src="images/history.svg"> History</a>
+                <a class="tasks"><img src="images/message.svg">Tasks</a>
+                <a class="communities"><img src="images/account-group.svg">Communities</a>
             </div>
             <div class="extra">
-                <div class="settings">Settings</div>
-                <div class="support">Support</div>
-                <div class="privacy">Privacy</div>
+                <a class="settings"><img src="images/cog.svg">Settings</a>
+                <a class="support"><img src="images/face-agent.svg">Support</a>
+                <a class="privacy"><img src="images/shield.svg">Privacy</a>
             </div>
         </nav>
         <div class="topbar">
             <input type="search" name="pagesearch" id="search">
-            <button class="notifications">Notifications</button>
             <div class="profile">
-                <img src="" alt="">
+                <button class="notifications"><img src="images/bell.svg" class="bell" alt="Notifications"></button>
+                <img src="images/account.svg" class="propic">
                 <a href="">Morgan Oakley</a>
             </div>
             <div class="greeting">
-                <img src="" alt="">
-                <div class="subtext">Hi there,</div>
-                <div class="id">Morgan Oakley(@morgan)</div>
+                <img src="images/account.svg" class="greetpic">
+                <div class="greet">
+                    <div class="subtext">Hi there,</div>
+                    <div class="id">Morgan Oakley(@morgan)</div>
+                </div>
             </div>
             <div class="modify">
                 <button class="new">New</button>
@@ -66,9 +68,34 @@
             </div>
             <div class="announcements">
                 <div class="title">Announcements</div>
+                <div class="cardlist">
+                    <div class="card">
+                        <div class="contitle">Site Maintenance</div>
+                        <div class="context"></div>
+                    </div>
+                    <div class="card">
+                        <div class="contitle">Community Share Day</div>
+                        <div class="context"></div>
+                    </div>
+                    <div class="card">
+                        <div class="contitle">Updated Privacy Policy</div>
+                        <div class="context"></div>
+                    </div>
+                </div>
             </div>
             <div class="trending">
                 <div class="title">Trending</div>
+                <div class="card">
+                        <div class="contitle">Site Maintenance</div>
+                        <div class="context"></div>
+                    </div>
+                    <div class="card">
+                        <div class="contitle">Community Share Day</div>
+                        <div class="context"></div>
+                    </div>
+                    <div class="card">
+                        <div class="contitle">Updated Privacy Policy</div>
+                        <div class="context"></div>
             </div>
         </div>
     </div>

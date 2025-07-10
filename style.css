@@ -1,3 +1,7 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body{
     margin: 0px;
     padding: 0%;
@@ -7,71 +11,183 @@ body{
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .sidebar{
     grid-row: 1 / 3;
-    background-color: lightskyblue;
+    background-color: teal;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    gap: 20px;
+    height: 100%;
+    gap: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.pagetitle{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: .5rem;
+}
+
+.pagetitle>img{
+    width: 2.5rem;
+}
+
+.nav, .extra{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav>a, .extra>a{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+a>img{
+    width: 1.5rem;
 }
 
 .topbar{
     grid-column: 2 / 3;
     display: grid;
+    margin: .8rem;
+    gap: .5rem;
 }
 
-.notifications{
-    grid-column: 2 / 3;
+input[type="search"]{
+    appearance: none;
+}
+
+.bell{
+    width: 1.5rem;
 }
 
 .profile{
     grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
 }
 
-.greetings, .modify{
+.propic, .greetpic{
+    border: 1px teal solid;
+    border-radius: 50%;
+}
+
+.propic{
+    width: 2rem;
+}
+
+.greeting{
+    display: flex;
+    gap:.8rem;
+}
+
+.greet{
+    display: grid;
+    font-weight: 600;
+}
+
+.subtext{
+    grid-row: 1 / 2;
+    font-size: .8rem;
+}
+
+.greetpic{
+    height: 3rem;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.greeting, .modify{
     grid-row: 2 / 3;
 }
 
 .modify{
     display: grid;
     grid-auto-flow: column;
-    grid-column: 2 / 4;
+    grid-column: 3 / 4;
+}
+
+.modify>button{
+    box-sizing: border-box;
+    margin: 0.9rem;
+    border-radius: 1rem;
 }
 
 .content{
     grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
     display: grid;
     background-color: lightgray;
+    grid-template-columns: 3fr 1fr;
 }
 
 .projects{
     grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    margin: .8rem;
+    gap: .5rem;
 }
 
-.cardlist{
+.projects>.cardlist{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
 }
 
-.card{
+.projects>.cardlist>.card{
     background-color: white;
-    border-radius: 1.2rem;
+    border-radius: .6rem;
     min-height: 150px;
+    border: 0px;
+    border-left: 6px;
+    border-color: orange;
+    border-style: solid;
 }
 
 .announcements{
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    margin: .8rem;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements>.cardlist{
+    display: grid;
+    min-height: 250px;
+    border-radius: .6rem
+}
+
+.announcements .card{
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.announcements .card + .card{
+    border: 0px;
+    border-top: 1px;
+    border-color: gray;
+    border-style: solid;
 }
 
 .trending{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 button, input[type="search"]{
