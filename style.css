@@ -175,7 +175,9 @@ input[type="search"]{
 
 .context{
     grid-row: 2 / 3;
-    font-weight: 400;
+    font-size: .8rem;
+    font-weight: 500;
+    color: gray;
 }
 
 .title{
@@ -192,7 +194,7 @@ input[type="search"]{
 
 .announcements>.cardlist{
     display: grid;
-    min-height: 250px;
+    height: 300px;
     border-radius: .6rem;
     background-color: white;
     padding: 1rem;
@@ -260,8 +262,6 @@ button, input[type="search"]{
     content: "@";
 }
 
-.tag .context{
-    font-size: .8rem;
-    font-weight: 500;
-    color: gray;
+.card{
+    overflow: hidden;
 }
